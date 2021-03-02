@@ -1,0 +1,51 @@
+.is-electro {
+    background-color: purple;
+}
+
+.is-electro .title, .is-electro .subtitle {
+    color: #fff;
+}
+
+.hiddenClass {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    position: absolute;   /* or float: left; width: 100%;*/
+    left: 0;
+    right: 0;
+
+    transform: translateY(-10%);
+    transition: all .2s ease-in-out;
+    pointer-events: none;
+}
+
+.element {
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    pointer-events: auto;
+}
+
+.charCard {
+    display: inline-block;
+    flex: 0 1 25%;
+    padding: 10px;
+}
+
+/* @keyframes navAnim {
+    0% {
+      display: none;
+      opacity: 0;
+      height: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      height: 396px;
+    }
+} */

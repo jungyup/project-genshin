@@ -1,0 +1,148 @@
+<div class="ui segment">
+    <section class="hero is-danger" (click)="toggleHero('pyro')">
+        <div class="hero-body">
+            <p class="title">Pyro</p>
+            <p class="subtitle">Fire Element</p>
+        </div>
+    </section>
+    <div [ngClass]="this.isPyroHidden ? 'hiddenClass' : 'element' ">
+        <app-character-card *ngFor="let char of this.pyro" [character]="char"></app-character-card>
+    </div>
+    
+
+    <section class="hero is-link" (click)="toggleHero('hydro')">
+        <div class="hero-body">
+            <p class="title">Hydro</p>
+            <p class="subtitle">Water Element</p>
+        </div>
+    </section>
+    <div [ngClass]="this.isHydroHidden ? 'hiddenClass' : 'element' ">
+        <app-character-card *ngFor="let char of this.hydro" [character]="char"></app-character-card>
+    </div>
+
+    <section class="hero is-primary" (click)="toggleHero('anemo')">
+        <div class="hero-body">
+            <p class="title">Anemo</p>
+            <p class="subtitle">Wind Element</p>
+        </div>
+    </section>
+    <div [ngClass]="this.isAnemoHidden ? 'hiddenClass' : 'element' ">
+        <app-character-card *ngFor="let char of this.anemo" [character]="char"></app-character-card>
+    </div>
+
+    <section class="hero is-electro" (click)="toggleHero('electro')">
+        <div class="hero-body">
+            <p class="title">Electro</p>
+            <p class="subtitle">Electric Element</p>
+        </div>
+    </section>
+    <div [ngClass]="this.isElectroHidden ? 'hiddenClass' : 'element' ">
+        <app-character-card *ngFor="let char of this.electro" [character]="char"></app-character-card>
+    </div>
+
+    <section class="hero is-info" (click)="toggleHero('cryo')">
+        <div class="hero-body">
+            <p class="title">Cryo</p>
+            <p class="subtitle">Ice Element</p>
+        </div>
+    </section>
+    <div [ngClass]="this.isCryoHidden ? 'hiddenClass' : 'element' ">
+        <app-character-card *ngFor="let char of this.cryo" [character]="char"></app-character-card>
+    </div>
+    
+    <section class="hero is-warning" (click)="toggleHero('geo')">
+        <div class="hero-body">
+            <p class="title">Geo</p>
+            <p class="subtitle">Earth Element</p>
+        </div>
+    </section>
+    <div [ngClass]="this.isGeoHidden ? 'hiddenClass' : 'element' ">
+        <app-character-card *ngFor="let char of this.geo" [character]="char"></app-character-card>
+    </div>
+</div>
+
+
+<!-- <div class="card">
+    <div class="card-image">
+        <figure class="image is-4by3">
+        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        </figure>
+    </div>
+    <div class="card-content">
+        <div class="media">
+        <div class="media-left">
+            <figure class="image is-48x48">
+            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+            </figure>
+        </div>
+        <div class="media-content">
+            <p class="title is-4">John Smith</p>
+            <p class="subtitle is-6">@johnsmith</p>
+        </div>
+        </div>
+    
+        <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+        <a href="#">#css</a> <a href="#">#responsive</a>
+        <br>
+        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-image">
+        <figure class="image is-4by3">
+        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        </figure>
+    </div>
+    <div class="card-content">
+        <div class="media">
+        <div class="media-left">
+            <figure class="image is-48x48">
+            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+            </figure>
+        </div>
+        <div class="media-content">
+            <p class="title is-4">John Smith</p>
+            <p class="subtitle is-6">@johnsmith</p>
+        </div>
+        </div>
+    
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+            <a href="#">#css</a> <a href="#">#responsive</a>
+            <br>
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-image">
+        <figure class="image is-4by3">
+        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        </figure>
+    </div>
+    <div class="card-content">
+        <div class="media">
+        <div class="media-left">
+            <figure class="image is-48x48">
+            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+            </figure>
+        </div>
+        <div class="media-content">
+            <p class="title is-4">John Smith</p>
+            <p class="subtitle is-6">@johnsmith</p>
+        </div>
+        </div>
+    
+        <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+        <a href="#">#css</a> <a href="#">#responsive</a>
+        <br>
+        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        </div>
+    </div>
+</div> -->

@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="card-image" [ngClass]="{
+        'background-color': this.character.rarity === 5
+    }">
+        <figure class="image is-4by4">
+        <img [src]="'../../../assets/' + this.character.name + '.png'" alt="Placeholder image">
+        </figure>
+    </div>
+    <div class="card-content">
+        <div class="media">
+            <div class="media-left">
+                <figure class="image is-48x48">
+                <img [src]="'../../../assets/' + this.character.weapon + '.png'" alt="Placeholder image" style="background-color: pink;">
+                </figure>
+            </div>
+            <div class="media-content">
+                <p class="title is-4">{{ this.character.name }}</p>
+                <p *ngIf="this.character.nation" class="subtitle is-6">@{{ this.character.nation }}</p>
+            </div>
+        </div>
+    
+        <div class="content">
+            {{ this.character.rarity }}
+        </div>
+    </div>
+</div>
